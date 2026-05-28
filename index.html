@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAMP Journal Club Study Guide</title>
+<meta name="description" content="Trilingual (KO/ZH/EN) study guide for STAMP — Spatial Transcriptomics Analysis with topic Modeling. Nature Methods 2024.">
+
+<!-- MathJax config + lib -->
+<script>
+MathJax = {
+  tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$'],['\\[','\\]']] },
+  svg: { fontCache: 'global' },
+  startup: { typeset: false }
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<!-- styles -->
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-lang="ko">
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><b>STAMP</b> · Journal Club Study Guide</div>
+    <div class="langsw" role="group" aria-label="language switch">
+      <button data-set="ko" class="active">한국어</button>
+      <button data-set="zh">中文</button>
+      <button data-set="en">English</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow" id="hero-eyebrow"></div>
+    <h1 id="hero-title"></h1>
+    <p class="lead" id="hero-lead"></p>
+    <div class="paper-ref">
+      Zhong, Ang &amp; Chen. <span id="hero-reflabel"></span>:
+      <a href="https://github.com/JinmiaoChenLab/scTM" target="_blank" rel="noopener">JinmiaoChenLab/scTM</a> ·
+      <a href="https://doi.org/10.1038/s41592-024-02463-8" target="_blank" rel="noopener">DOI</a>
+    </div>
+    <nav class="toc" id="toc"></nav>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--teal)"></i> <span class="lang lang-ko">데이터/행렬</span><span class="lang lang-zh">数据/矩阵</span><span class="lang lang-en">data/matrix</span></span>
+      <span><i class="dot" style="background:var(--indigo)"></i> <span class="lang lang-ko">AI/신경망</span><span class="lang lang-zh">AI/神经网络</span><span class="lang lang-en">AI/network</span></span>
+      <span><i class="dot" style="background:var(--emerald)"></i> <span class="lang lang-ko">구조/사전분포</span><span class="lang lang-zh">结构/先验</span><span class="lang lang-en">structure/prior</span></span>
+      <span><i class="dot" style="background:var(--amber)"></i> <span class="lang lang-ko">불확실성</span><span class="lang lang-zh">不确定性</span><span class="lang lang-en">uncertainty</span></span>
+      <span><i class="dot" style="background:var(--violet)"></i> <span class="lang lang-ko">확장</span><span class="lang lang-zh">扩展</span><span class="lang lang-en">extension</span></span>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <!-- sections rendered here by i18n.js from content.js -->
+  <div id="sections"></div>
+
+  <footer>
+    <span>STAMP · Nature Methods 21, 2072–2083 (2024)</span>
+    <span class="lang lang-ko">費翔(비상) 정리 · 三语 Journal Club Guide</span>
+    <span class="lang lang-zh">費翔 整理 · 三语 Journal Club 指南</span>
+    <span class="lang lang-en">Compiled by Fei Xiang · Trilingual Journal Club Guide</span>
+  </footer>
+
+</div>
+
+<!-- content data + render logic -->
+<script src="assets/js/content.js"></script>
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>
